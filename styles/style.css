@@ -53,7 +53,7 @@
 
   /* header styles */
   .container{
-    max-width: 80%;
+    width: 85%;
     margin: 0 auto;
     margin-bottom: 80px;
   }
@@ -141,9 +141,10 @@
   
   /* change you habit section styles */
   .change-your-habits{
-    width: 80%;
+    width: 85%;
     margin: 0 auto;
     text-align: center;
+    margin-bottom: 80px;
   }
   .card{
     display: flex;
@@ -164,8 +165,28 @@
     font-weight: 300;
     font-size: 14px;
   }
+
+  /* running activity section styles */
+  .running-activity{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    background: rgb(34, 34, 34);
+    padding: 30px;
+    border-radius: 18px;
+  }
+  .running-content{
+    width: 60%;
+  }
+  .running-image img{
+    width: 100%;
+    border-radius: 18px;
+  }
   @media screen and (max-width: 576px) {
-    .banner, .card{
+  
+    .banner, .card, .running-activity{
         flex-direction: column;
     }
     ul > li{
@@ -174,7 +195,7 @@
     .banner{
         gap: 10px;
     }
-    .banner-content{
+    .banner-content, .running-content{
         width: 100%;
     }
     .banner-title{
@@ -182,5 +203,8 @@
     }
     .title{
       font-size: 2rem;
+    }
+    .running-content button{
+      width: 100%;
     }
   }

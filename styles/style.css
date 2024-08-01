@@ -40,6 +40,16 @@
     font-weight: 500;
     margin-right: 10px;
   }
+  .title{
+    font-size: 3rem;
+    font-weight: 900;
+    margin-bottom: 14px;
+  }
+  .description{
+    opacity: 0.65;
+    font-weight: 300;
+    margin-bottom: 20px;
+  }
 
   /* header styles */
   .container{
@@ -109,7 +119,7 @@
     background-color: #E6533C;
     display: inline-block;
   }
-  .card-1, .card-2{
+  .banner-card-1, .banner-card-2{
     border: 1px solid rgba(255, 255, 255, 0.1);
     background: rgba(48, 48, 48, 0.822);
     backdrop-filter: blur(20px);
@@ -117,20 +127,45 @@
     position: absolute;
     padding: 15px;
   }
-  .card-1{
+  .banner-card-1{
     bottom: 50px;
     left: -80px;
     display: flex;
     align-items: center;
     gap: 10px;
   }
-  .card-2{
+  .banner-card-2{
     top: 130px;
     right: -20px;
   }
   
+  /* change you habit section styles */
+  .change-your-habits{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .card{
+    display: flex;
+    gap: 40px;
+    margin-top: 50px;
+  }
+  .card img{
+    border-radius: 50%;
+  }
+  .card-name{
+    font-size: 18px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-bottom: 6px;
+  }
+  .card-description{
+    opacity: 0.5;
+    font-weight: 300;
+    font-size: 14px;
+  }
   @media screen and (max-width: 576px) {
-    .banner{
+    .banner, .card{
         flex-direction: column;
     }
     ul > li{
@@ -144,5 +179,8 @@
     }
     .banner-title{
         font-size: 2.5rem;
+    }
+    .title{
+      font-size: 2rem;
     }
   }

@@ -38,12 +38,14 @@
     color: white;
     font-size: 18px;
     font-weight: 500;
+    margin-right: 10px;
   }
 
   /* header styles */
   .container{
     max-width: 80%;
     margin: 0 auto;
+    margin-bottom: 80px;
   }
   /* navbar styles */
   .navbar{
@@ -79,9 +81,11 @@
   .banner{
     margin-top: 30px;
     display: flex;
-    justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 120px;
+  }
+  .banner-content{
+    width: 50%;
   }
   .banner-title{
     font-size: 4.3rem;
@@ -93,5 +97,52 @@
   }
   .banner-image img{
     width: 100%;
+    
+  }
+  .banner-image{
+    position: relative;
+  }
+  .dot{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #E6533C;
+    display: inline-block;
+  }
+  .card-1, .card-2{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    background: rgba(48, 48, 48, 0.822);
+    backdrop-filter: blur(20px);
+    border-radius: 20px;
+    position: absolute;
+    padding: 15px;
+  }
+  .card-1{
+    bottom: 50px;
+    left: -80px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  .card-2{
+    top: 130px;
+    right: -20px;
   }
   
+  @media screen and (max-width: 576px) {
+    .banner{
+        flex-direction: column;
+    }
+    ul > li{
+        display: none;
+    }
+    .banner{
+        gap: 10px;
+    }
+    .banner-content{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 2.5rem;
+    }
+  }

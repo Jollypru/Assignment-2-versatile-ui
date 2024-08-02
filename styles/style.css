@@ -196,6 +196,7 @@
     display: flex;
     gap: 100px;
     padding: 50px 100px;
+    margin-bottom: 80px;
   }
   .chart h3, .calculator h3{
     font-size: 1.75rem;
@@ -232,6 +233,46 @@
   }
   #activity-factor{
     width: 555px;
+  }
+
+  /* meet our team section styles */
+  .meet-our-team{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .trainers{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    background: rgb(34, 34, 34);
+    padding: 20px;
+    border-radius: 18px;
+    margin-top: 50px;
+  }
+  .trainers img{
+    width: 100%;
+    height: 270px;
+    border-radius: 18px;
+    filter: brightness(70%);
+  }
+  .trainer-1, .trainer-2, .trainer-3, .trainer-4, .trainer-5, .trainer-6{
+    position: relative;
+  }
+  .name{
+    position: absolute;
+    bottom: 17%;
+    left: 3%;
+    font-weight: 900;
+    font-size: 1.25rem;
+  }
+  .role{
+    position: absolute;
+    bottom: 10%;
+    left: 3%;
+    font-size: 0.9rem;
+    opacity: 0.7;
   }
   @media screen and (max-width: 576px) {
   
@@ -277,5 +318,8 @@
     }
     #activity-factor{
       width: 100%;
+    }
+    .trainers{
+      grid-template-columns: repeat(1, 1fr);
     }
   }

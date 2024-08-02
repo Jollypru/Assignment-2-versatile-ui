@@ -274,18 +274,67 @@
     font-size: 0.9rem;
     opacity: 0.7;
   }
+
+  /* footer styles */
+  .footer-container{
+    background: rgba(34, 34, 34, 0.9);
+    padding: 30px 0;
+  }
+  .top-section{
+    display: flex;  
+    justify-content: space-between;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .brand-info{
+    width: 40%;
+  }
+  .get-started, .learn-more{
+    width: 20%;
+  }
+  .brand-info h3{
+    font-size: 3rem;
+    font-weight: 800;
+    color: #E6533C;
+    margin-bottom: 20px;
+  }
+  .top-section h4{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+  }
+  .items{
+    list-style: none;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  .items li{
+    margin-bottom: 16px;
+  }
+  hr{
+    width: 85%;
+    margin: 0 auto;
+    
+  }
+  .copyright{
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.5);
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 300;
+  }
   @media screen and (max-width: 576px) {
   
-    .banner, .card, .running-activity, .chart-and-calculator-container{
+    .banner, .card, .running-activity, .chart-and-calculator-container, .top-section{
         flex-direction: column;
     }
-    ul > li{
+    .navbar > ul > li{
         display: none;
     }
     .banner{
         gap: 10px;
     }
-    .banner-content, .running-content, .calculator{
+    .banner-content, .running-content, .calculator, .brand-info, .get-started, .learn-more{
         width: 100%;
     }
     .banner-title{

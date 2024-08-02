@@ -176,6 +176,7 @@
     background: rgb(34, 34, 34);
     padding: 30px;
     border-radius: 18px;
+    margin-bottom: 80px;
   }
   .running-content{
     width: 60%;
@@ -184,9 +185,57 @@
     width: 100%;
     border-radius: 18px;
   }
+
+  /* BMI calculator */
+  .calculator-info{
+    width: 50%;
+    margin: 0 auto;
+  }
+  .chart-and-calculator-container{
+    background: rgb(34, 34, 34);
+    display: flex;
+    gap: 100px;
+    padding: 50px 100px;
+  }
+  .chart h3, .calculator h3{
+    font-size: 1.75rem;
+    font-weight: 800;
+    margin-bottom: 15px;
+  }
+  table{
+    border-collapse: collapse;
+    margin-top: 50px;
+  }
+  td, th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 10px 50px 10px 15px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  th{
+    color: rgb(255, 255, 255);
+  }
+  .calculator{
+    width: 55%;
+  }
+  input, select{
+    width:270px;
+    padding: 13px 40px 13px 20px;
+    background: rgba(255, 255, 255, 0.1);
+    border: none;
+    border-radius: 8px;
+    color: rgba(255, 255, 255, 0.6);
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  option{
+    color: black;
+  }
+  #activity-factor{
+    width: 555px;
+  }
   @media screen and (max-width: 576px) {
   
-    .banner, .card, .running-activity{
+    .banner, .card, .running-activity, .chart-and-calculator-container{
         flex-direction: column;
     }
     ul > li{
@@ -195,7 +244,7 @@
     .banner{
         gap: 10px;
     }
-    .banner-content, .running-content{
+    .banner-content, .running-content, .calculator{
         width: 100%;
     }
     .banner-title{
@@ -205,6 +254,28 @@
       font-size: 2rem;
     }
     .running-content button{
+      width: 100%;
+    }
+
+    td, th{
+      padding: 10px 40px 10px 15px;
+    }
+    .calculator-info{
+      width: 90%;
+    }
+    .chart-and-calculator-container{
+      padding: 30px;
+    }
+    .chart h3, .calculator h3{
+      font-size: 1.3rem;
+    }
+    input, select{ 
+      width: 46%;  
+      padding: 13px 20px;
+      margin-right: 10px;
+      font-size: 16px;
+    }
+    #activity-factor{
       width: 100%;
     }
   }

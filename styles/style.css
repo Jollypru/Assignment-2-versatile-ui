@@ -36,6 +36,7 @@
     color: white;
     font-size: 18px;
     font-weight: 500;
+    cursor: pointer;
   }
   .btn-secondary{
     border: 1px solid rgb(255, 255, 255);
@@ -46,6 +47,7 @@
     font-size: 18px;
     font-weight: 500;
     margin-right: 10px;
+    cursor: pointer;
   }
   .title{
     font-size: 3rem;
@@ -93,7 +95,9 @@
     border-radius: 39px;
     padding: 6px 20px;
   }
-
+  .fa-bars{
+    display: none;
+  }
   /* banner-styles */
   .banner{
     margin-top: 30px;
@@ -136,7 +140,7 @@
   }
   .banner-card-1{
     bottom: 50px;
-    left: -80px;
+    left: -15%;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -282,6 +286,50 @@
     opacity: 0.7;
   }
 
+  /* our package styles */
+  .our-package{
+    width: 85%;
+    margin: 0 auto;
+    text-align: center;
+    margin-bottom: 80px;
+  }
+  .package-card{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 40px;
+  }
+.package-card-1, .package-card-2, .package-card-3{
+  width: 30%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 16px;
+  border-radius: 8px;
+}
+.type{
+  font-size: 2rem;
+  font-weight: 800;
+  background: rgba(255, 255, 255, 0.1);
+  color: #E6533C;
+  margin-bottom: 20px;
+  padding: 10px 0;
+  border-radius: 5px;
+}
+.amount{
+  font-size: 2.5rem;
+}
+.options{
+  list-style-position:inside;
+  text-align: start;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.package-card-1 p, .package-card-2 p, .package-card-3 p{
+  margin-bottom: 30px;
+}
+.op-1-3, .op-1-4, .op-1-5, .op-1-6, .op-2-5, .op-2-6{
+  color: rgba(255, 255, 255, 0.2);
+}
   /* footer styles */
   .footer-container{
     background: rgba(34, 34, 34, 0.9);
@@ -332,16 +380,19 @@
   }
   @media screen and (max-width: 576px) {
   
-    .banner, .card, .running-activity, .chart-and-calculator-container, .top-section{
+    .banner, .card, .running-activity, .chart-and-calculator-container, .top-section, .package-card{
         flex-direction: column;
     }
     .navbar > ul > li{
         display: none;
     }
+    .fa-bars{
+      display: inline;
+    }
     .banner{
         gap: 10px;
     }
-    .banner-content, .running-content, .calculator, .brand-info, .get-started, .learn-more{
+    .banner-content, .running-content, .calculator, .brand-info, .get-started, .learn-more, .package-card-1, .package-card-2, .package-card-3{
         width: 100%;
     }
     .banner-title{
